@@ -11,7 +11,7 @@ MOCKS=mock_test # list of function signature to mock
 LDFLAGS=-l cmocka -L$(CMOCKA_DIR)/build/src -Wl,-rpath=$(CMOCKA_DIR)/build/src
 LDFLAGS+=$(foreach MOCK,$(MOCKS),-Wl,--wrap=$(MOCK))
 
-TARGET=test_gen
+TARGET=test_main
 
 SRC=$(shell find ../src/* -type f -name '*.c' ! -name '*main.c*' -printf '%f\n')
 TEST_SRC=$(shell find * -maxdepth 0 -type f -name '*.c' -print)
