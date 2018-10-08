@@ -2,3 +2,7 @@ root = true
 
 [*]
 indent_size = 4
+indent_style = space
+
+[{Makefile,**.mk}]
+indent_style = tab
