@@ -2,6 +2,7 @@ vpath %.c ../src
 
 CC=gcc
 
+INCLUDE_DIRS+=-I../src
 INCLUDE_DIRS+=-I../include
 INCLUDE_DIRS+=-I$(CMOCKA_DIR)/include
 
